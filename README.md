@@ -30,6 +30,20 @@ Connect to a nearby network
 
     nmcli device wifi connect <WifiName> password <SSID_password>
 
+### System time
+
+To sync date/time with time servers, install ntp
+
+    pacman -S ntp
+
+Enable ntp service so it starts on startup/reset
+
+    systemctl enable ntpd.service
+
+Start the service
+
+    systemctl start ntpd.service
+
 ### Packages
 
 Important packages for all kinds of stuff
