@@ -61,3 +61,13 @@ For some dependencies, unofficial packages, older releases etc, you will need to
 Resources
 
 * [How to Install Yay AUR Helper in Arch Linux and Manjaro](https://www.tecmint.com/install-yay-aur-helper-in-arch-linux-and-manjaro/)
+
+### Other
+
+#### Clipboard
+
+For some reason I had to add the following line to my .bashrc to be able to
+work with "y" in vim so it copies the text to the system clipboard
+
+    export DISPLAY=:1
+
