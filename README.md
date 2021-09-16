@@ -71,3 +71,6 @@ work with "y" in vim so it copies the text to the system clipboard
 
     export DISPLAY=:1
 
+### Language
+
+    sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts
