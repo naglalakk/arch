@@ -30,6 +30,21 @@ Connect to a nearby network
 
     nmcli device wifi connect <WifiName> password <SSID_password>
 
+#### ipv6 / ipv4 latency
+
+ipv6 is enabled by default. This makes some package managers like pip, poetry
+etc very slow. 
+
+To change this for sites that prefer IPv4 connections uncomment the following
+line in /etc/gai.conf
+
+```
+#
+#    For sites which prefer IPv4 connections change the last line to
+#
+precedence ::ffff:0:0/96  100
+```
+
 ### System time
 
 To sync date/time with time servers, install ntp
