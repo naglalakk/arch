@@ -3,6 +3,20 @@ Arch
 
 Collection of points on installing / using arch-linux
 
+### System
+
+Update packages regularly
+
+```
+pacman -Syu
+```
+
+Upgrade system regularly. This prevents most signin errors
+
+```
+pacman -Sy archlinux-keyring && pacman -Su
+```
+
 ### Networking
 
 Network failures are often due to 2 or more Network Managers running at the same time. To enable WiFi with wifi-menu I had to do
